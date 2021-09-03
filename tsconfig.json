@@ -1,0 +1,60 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "paths": {
+      "@enbiso/auth": [
+        "dist/enbiso/auth/enbiso-auth",
+        "dist/enbiso/auth"
+      ],
+      "@enbiso/ngrx-operators": [
+        "dist/enbiso/ngrx-operators/enbiso-ngrx-operators",
+        "dist/enbiso/ngrx-operators"
+      ],
+      "@enbiso/ngrx-route": [
+        "dist/enbiso/ngrx-route/enbiso-ngrx-route",
+        "dist/enbiso/ngrx-route"
+      ],
+      "@enbiso/ngrx-router": [
+        "dist/enbiso/ngrx-router/enbiso-ngrx-router",
+        "dist/enbiso/ngrx-router"
+      ],
+      "@enbiso/rest-client": [
+        "dist/enbiso/rest-client/enbiso-rest-client",
+        "dist/enbiso/rest-client"
+      ],
+      "@enbiso/utils-string": [
+        "dist/enbiso/utils-string/enbiso-utils-string",
+        "dist/enbiso/utils-string"
+      ],
+      "@enbiso/utils-url": [
+        "dist/enbiso/utils-url/enbiso-utils-url",
+        "dist/enbiso/utils-url"
+      ]
+    },
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2017",
+    "module": "es2020",
+    "lib": [
+      "es2018",
+      "dom"
+    ]
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
+}
