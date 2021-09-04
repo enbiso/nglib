@@ -66,3 +66,10 @@ export abstract class RestService {
         return opts
     }
 }
+
+export interface RestErrorResponse {
+    content?: {
+        message?: string
+    } | string,
+    message?: string
+}

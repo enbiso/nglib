@@ -15,10 +15,6 @@
         "dist/enbiso/ngrx-route/enbiso-ngrx-route",
         "dist/enbiso/ngrx-route"
       ],
-      "@enbiso/ngrx-router": [
-        "dist/enbiso/ngrx-router/enbiso-ngrx-router",
-        "dist/enbiso/ngrx-router"
-      ],
       "@enbiso/rest-client": [
         "dist/enbiso/rest-client/enbiso-rest-client",
         "dist/enbiso/rest-client"
