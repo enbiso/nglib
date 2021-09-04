@@ -26,7 +26,7 @@ jobs:
         run: npx ng build @enbiso/utils-url
 
       - name: Publish
-        run: npm publish
+        run: npm publish --access public
         working-directory: dist/enbiso/utils-url
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
