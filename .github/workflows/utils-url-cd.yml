@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - "projects/enbiso/utils-url/*"
+      - "projects/enbiso/utils-url/**"
 
 jobs:
   build-web:
