@@ -4,7 +4,7 @@ import { TruncatePipe } from './truncate.pipe';
 
 @NgModule({
     imports: [],
-    exports: [],
+    exports: [StartCasePipe, TruncatePipe],
     declarations: [StartCasePipe, TruncatePipe],
     providers: [],
 })

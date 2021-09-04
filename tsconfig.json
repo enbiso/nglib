@@ -7,6 +7,14 @@
         "dist/enbiso/auth/enbiso-auth",
         "dist/enbiso/auth"
       ],
+      "@enbiso/dialog": [
+        "dist/enbiso/dialog/enbiso-dialog",
+        "dist/enbiso/dialog"
+      ],
+      "@enbiso/multi-input": [
+        "dist/enbiso/multi-input/enbiso-multi-input",
+        "dist/enbiso/multi-input"
+      ],
       "@enbiso/ngrx-operators": [
         "dist/enbiso/ngrx-operators/enbiso-ngrx-operators",
         "dist/enbiso/ngrx-operators"
@@ -14,6 +22,10 @@
       "@enbiso/ngrx-route": [
         "dist/enbiso/ngrx-route/enbiso-ngrx-route",
         "dist/enbiso/ngrx-route"
+      ],
+      "@enbiso/object-input": [
+        "dist/enbiso/object-input/enbiso-object-input",
+        "dist/enbiso/object-input"
       ],
       "@enbiso/rest-client": [
         "dist/enbiso/rest-client/enbiso-rest-client",

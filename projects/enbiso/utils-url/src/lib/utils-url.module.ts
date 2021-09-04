@@ -4,7 +4,7 @@ import { SafePipe } from './safe.pipe';
 
 @NgModule({
     imports: [],
-    exports: [],
+    exports: [SafePipe],
     declarations: [SafePipe],
     providers: [],
 })

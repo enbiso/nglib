@@ -188,6 +188,99 @@
           }
         }
       }
+    },
+    "@enbiso/dialog": {
+      "projectType": "library",
+      "root": "projects/enbiso/dialog",
+      "sourceRoot": "projects/enbiso/dialog/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/enbiso/dialog/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/enbiso/dialog/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/enbiso/dialog/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/enbiso/dialog/src/test.ts",
+            "tsConfig": "projects/enbiso/dialog/tsconfig.spec.json",
+            "karmaConfig": "projects/enbiso/dialog/karma.conf.js"
+          }
+        }
+      }
+    },
+    "@enbiso/multi-input": {
+      "projectType": "library",
+      "root": "projects/enbiso/multi-input",
+      "sourceRoot": "projects/enbiso/multi-input/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/enbiso/multi-input/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/enbiso/multi-input/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/enbiso/multi-input/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/enbiso/multi-input/src/test.ts",
+            "tsConfig": "projects/enbiso/multi-input/tsconfig.spec.json",
+            "karmaConfig": "projects/enbiso/multi-input/karma.conf.js"
+          }
+        }
+      }
+    },
+    "@enbiso/object-input": {
+      "projectType": "library",
+      "root": "projects/enbiso/object-input",
+      "sourceRoot": "projects/enbiso/object-input/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/enbiso/object-input/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/enbiso/object-input/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/enbiso/object-input/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/enbiso/object-input/src/test.ts",
+            "tsConfig": "projects/enbiso/object-input/tsconfig.spec.json",
+            "karmaConfig": "projects/enbiso/object-input/karma.conf.js"
+          }
+        }
+      }
     }
   },
   "defaultProject": "@enbiso/auth"
