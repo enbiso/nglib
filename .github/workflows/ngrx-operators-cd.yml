@@ -23,7 +23,7 @@ jobs:
         run: npm i
 
       - name: Build
-        run: npx ng build @enbiso/ngrx-operators
+        run: ./build-all.sh
 
       - name: Publish
         run: npm publish --access public
