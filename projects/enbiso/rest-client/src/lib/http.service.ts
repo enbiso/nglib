@@ -1,8 +1,7 @@
 import { HttpClient, HttpHeaders, HttpParams, HttpErrorResponse } from '@angular/common/http';
-import { Observable, from as fromPromise, throwError } from 'rxjs';
+import { Observable, throwError } from 'rxjs';
 import { map, mergeMap, catchError, filter } from 'rxjs/operators';
 import { Injectable, Injector, InjectionToken } from '@angular/core';
-import { AuthService } from '@enbiso/auth';
 import { Store } from '@ngrx/store';
 import { selectAuthHeader } from '@enbiso/auth';
 
@@ -10,7 +9,7 @@ import { selectAuthHeader } from '@enbiso/auth';
  * Core HTTP error handler
  */
 export interface CoreHttpErrorHandler {
-    handle(err: HttpErrorResponse)
+    handle(err: HttpErrorResponse): void
 }
 
 /**
@@ -24,7 +23,7 @@ export const CORE_HTTP_ERROR_HANDLER = new InjectionToken<CoreHttpErrorHandler[]
 @Injectable({ providedIn: "root" })
 export class HttpService {
     errorHandlers: CoreHttpErrorHandler[]
-    authHeader$: Observable<string>
+    authHeader$: Observable<string | null>
 
     constructor(
         private http: HttpClient,
@@ -106,15 +105,15 @@ export class HttpService {
      * Get options based on setup opts
      * @param opts setup opts
      */
-    private _options(opts: HttpOptions): Observable<HttpOptions> {
-        opts = opts || {}
+    private _options(inputOpts?: HttpOptions): Observable<HttpOptions> {
+        const opts = inputOpts || {}
         return this.authHeader$.pipe(
             filter(token => token != null),
             map(token => {
-                opts.headers = opts.headers || {}
-                opts.headers["Accept"] = opts.headers["Accept"] || "application/json"
-                opts.headers["Content-Type"] = opts.headers["Content-Type"] || "application/json"
-                if (token) opts.headers["Authorization"] = token
+                opts.headers = opts.headers || {};
+                (opts.headers as any)["Accept"] = (opts.headers as any)["Accept"] || "application/json";
+                (opts.headers as any)["Content-Type"] = (opts.headers as any)["Content-Type"] || "application/json";
+                if (token) (opts.headers as any)["Authorization"] = token;
                 return opts
             }))
     }

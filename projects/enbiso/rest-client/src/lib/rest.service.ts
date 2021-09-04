@@ -60,9 +60,9 @@ export abstract class RestService {
      * @param opts Options
      */
     private _opts(opts?: HttpOptions): HttpOptions {
-        opts = opts || {}
-        opts.headers = opts.headers || {}
-        opts.headers["x-requestid"] = uuid()
+        opts = opts || <HttpOptions>{}
+        opts.headers = opts.headers || {};
+        (opts.headers as any)["x-requestid"] = uuid()
         return opts
     }
 }

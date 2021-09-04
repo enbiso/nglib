@@ -1,7 +1,3 @@
-/*
- * Public API Surface of rest-client
- */
-
-export * from './lib/rest-client.service';
-export * from './lib/rest-client.component';
-export * from './lib/rest-client.module';
+export * from './lib/http.service'
+export * from './lib/rest.service'
+export * from './lib/api-resolver.service'
