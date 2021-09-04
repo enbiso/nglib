@@ -1,0 +1,32 @@
+name: Publish @enbiso/auth
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "projects/enbiso/auth/**"
+
+jobs:
+  build-web:
+    name: Build & Publish
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "14.x"
+          registry-url: "https://registry.npmjs.org"
+
+      - name: Install Packages
+        run: npm i
+
+      - name: Build
+        run: npx ng build @enbiso/auth
+
+      - name: Publish
+        run: npm publish --access public
+        working-directory: dist/enbiso/auth
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
