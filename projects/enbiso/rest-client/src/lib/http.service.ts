@@ -15,7 +15,7 @@ export interface CoreHttpErrorHandler {
 /**
  * Core HTTP error handler token
  */
-export const CORE_HTTP_ERROR_HANDLER = new InjectionToken<CoreHttpErrorHandler[]>('CORE_HTTP_ERROR_HANDLER')
+export const EBS_REST_CLIENT_HTTP_ERROR_HANDLER = new InjectionToken<CoreHttpErrorHandler[]>('EBS_REST_CLIENT_HTTP_ERROR_HANDLER')
 
 /**
  * HTTP service
@@ -30,7 +30,7 @@ export class HttpService {
         store: Store,
         injector: Injector
     ) {
-        this.errorHandlers = injector.get(CORE_HTTP_ERROR_HANDLER, [])
+        this.errorHandlers = injector.get(EBS_REST_CLIENT_HTTP_ERROR_HANDLER, [])
         this.authHeader$ = store.select(selectAuthHeader)
     }
 
