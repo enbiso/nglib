@@ -23,7 +23,11 @@ jobs:
         run: npm i
 
       - name: Build
-        run: npx ng build @enbiso/rest-client
+        run: npx ng build @enbiso/utils-url &&
+          npx ng build @enbiso/ngrx-route &&
+          npx ng build @enbiso/ngrx-operators &&
+          npx ng build @enbiso/auth &&
+          npx ng build @enbiso/rest-client
 
       - name: Publish
         run: npm publish --access public
