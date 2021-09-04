@@ -9,7 +9,7 @@ on:
 
 jobs:
   build-web:
-    name: Build Web
+    name: Build & Publish
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
