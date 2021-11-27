@@ -2,15 +2,6 @@
   "$schema": "../../../node_modules/ng-packagr/ng-package.schema.json",
   "dest": "../../../dist/enbiso/auth",
   "lib": {
-    "entryFile": "src/public-api.ts",
-    "umdModuleIds": {
-      "oidc-client": "oidc-client'",
-      "@ngrx/store": "@ngrx/store",
-      "@ngrx/effects": "@ngrx/effects",
-      "@ngrx/router-store": "@ngrx/router-store",
-      "@enbiso/ngrx-operators": "@enbiso/ngrx-operators",
-      "@enbiso/ngrx-route": "@enbiso/ngrx-route",
-      "@enbiso/utils-url": "@enbiso/utils-url"
-    }
+    "entryFile": "src/public-api.ts"
   }
 }

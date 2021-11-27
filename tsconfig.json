@@ -38,6 +38,10 @@
       "@enbiso/utils-url": [
         "dist/enbiso/utils-url/enbiso-utils-url",
         "dist/enbiso/utils-url"
+      ],
+      "sample": [
+        "dist/sample/sample",
+        "dist/sample"
       ]
     },
     "baseUrl": "./",
