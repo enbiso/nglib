@@ -23,7 +23,7 @@ jobs:
         run: npm i
 
       - name: Build
-        run: ./build-all.sh
+        run: ./build.sh
 
       - name: Publish
         run: npm publish --access public

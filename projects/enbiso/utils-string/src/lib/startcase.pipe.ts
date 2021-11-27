@@ -1,5 +1,5 @@
 import { PipeTransform, Pipe } from '@angular/core';
-import { startCase } from 'lodash-es'
+import { startCase } from 'lodash'
 
 @Pipe({ name: 'startcase' })
 export class StartCasePipe implements PipeTransform {
