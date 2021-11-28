@@ -8,7 +8,7 @@ Check the packages in [npmjs.com](https://www.npmjs.com/search?q=%40enbiso)
 
 [![Publish @enbiso/multi-input](https://github.com/enbiso/nglib/actions/workflows/multi-input-cd.yml/badge.svg)](https://github.com/enbiso/nglib/actions/workflows/multi-input-cd.yml)
 
-[![Publish @enbiso/ngrx-operators](https://github.com/enbiso/nglib/actions/workflows/ngrx-operators-cd.yml/badge.svg)](https://github.com/enbiso/nglib/actions/workflows/ngrx-operators-cd.yml)
+[![Publish @enbiso/rxjs-operators](https://github.com/enbiso/nglib/actions/workflows/rxjs-operators-cd.yml/badge.svg)](https://github.com/enbiso/nglib/actions/workflows/rxjs-operators-cd.yml)
 
 [![Publish @enbiso/ngrx-route](https://github.com/enbiso/nglib/actions/workflows/ngrx-route-cd.yml/badge.svg)](https://github.com/enbiso/nglib/actions/workflows/ngrx-route-cd.yml)
 

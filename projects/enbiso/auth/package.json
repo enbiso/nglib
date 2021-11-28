@@ -2,16 +2,17 @@
   "name": "@enbiso/auth",
   "version": "0.1.0",
   "peerDependencies": {
-    "@angular/cdk": "^13.0.2",
-    "@angular/common": "^13.0.2",
-    "@angular/core": "^13.0.2",
-    "@angular/material": "^13.0.2",
+    "@angular/cdk": "13.x",
+    "@angular/common": "13.x",
+    "@angular/core": "13.x",
+    "@angular/material": "13.x",
     "@enbiso/rxjs-operators": "file:../../../dist/enbiso/rxjs-operators",
     "@enbiso/ngrx-route": "file:../../../dist/enbiso/ngrx-route",
-    "@ngrx/effects": "^13.0.1",
-    "@ngrx/router-store": "^13.0.1",
-    "@ngrx/store": "^13.0.1",
-    "oidc-client": "^1.11.5"
+    "@enbiso/utils-url": "file:../../../dist/enbiso/utils-url",
+    "@ngrx/effects": "13.x",
+    "@ngrx/router-store": "13.x",
+    "@ngrx/store": "13.x",
+    "oidc-client": "1.x"
   },
   "dependencies": {
     "tslib": "^2.3.0"

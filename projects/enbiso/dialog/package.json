@@ -2,8 +2,8 @@
   "name": "@enbiso/dialog",
   "version": "0.1.0",
   "peerDependencies": {
-    "@angular/common": "^13.0.2",
-    "@angular/core": "^13.0.2"
+    "@angular/common": "13.x",
+    "@angular/core": "13.x"
   },
   "dependencies": {
     "tslib": "^2.3.1"

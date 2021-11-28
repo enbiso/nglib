@@ -13,8 +13,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { EbsRouteModule } from '@enbiso/ngrx-route';
 import { EffectsModule } from '@ngrx/effects';
-import { StoreModule } from 'projects/enbiso/ngrx-route/node_modules/@ngrx/store/ngrx-store';
 import { authReducer, AuthEffects } from './state';
+import { StoreModule } from '@ngrx/store';
 
 const routes = [
     {
@@ -42,7 +42,7 @@ const routes = [
         RouterModule.forChild(routes),
         StoreModule.forFeature("auth", authReducer),
         EffectsModule.forFeature([AuthEffects]),
-        EbsRouteModule
+        EbsRouteModule,
     ],
     declarations: [
         AuthCallbackComponent,

@@ -2,14 +2,14 @@
   "name": "@enbiso/utils-string",
   "version": "0.1.0",
   "peerDependencies": {
-    "@angular/common": "^13.0.2",
-    "@angular/core": "^13.0.2",
-    "lodash": "4.17.21"
+    "@angular/common": "13.x",
+    "@angular/core": "13.x",
+    "lodash": "4.x"
   },
   "dependencies": {
     "tslib": "^2.3.1"
   },
   "devDependencies": {
-    "@types/lodash": "^4.14.177"
+    "@types/lodash": "4.x"
   }
 }

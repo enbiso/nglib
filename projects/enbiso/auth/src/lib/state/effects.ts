@@ -6,7 +6,7 @@ import { authActions } from './actions';
 import { tap, mergeMap, map, catchError, filter } from 'rxjs/operators';
 import { AuthService } from '../services/auth.service';
 import { Router } from '@angular/router';
-import { filterWithLatestFrom } from '@enbiso/ngrx-operators';
+import { filterWithLatestFrom } from '@enbiso/rxjs-operators';
 import { Store } from '@ngrx/store';
 import { selectRouterPathIn } from '@enbiso/ngrx-route';
 

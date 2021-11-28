@@ -15,9 +15,9 @@
         "dist/enbiso/multi-input/enbiso-multi-input",
         "dist/enbiso/multi-input"
       ],
-      "@enbiso/ngrx-operators": [
-        "dist/enbiso/ngrx-operators/enbiso-ngrx-operators",
-        "dist/enbiso/ngrx-operators"
+      "@enbiso/rxjs-operators": [
+        "dist/enbiso/rxjs-operators/enbiso-rxjs-operators",
+        "dist/enbiso/rxjs-operators"
       ],
       "@enbiso/ngrx-route": [
         "dist/enbiso/ngrx-route/enbiso-ngrx-route",
