@@ -1,14 +1,14 @@
 {
   "name": "@enbiso/auth",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "peerDependencies": {
     "@angular/cdk": "13.x",
     "@angular/common": "13.x",
     "@angular/core": "13.x",
     "@angular/material": "13.x",
-    "@enbiso/rxjs-operators": "file:../../../dist/enbiso/rxjs-operators",
-    "@enbiso/ngrx-route": "file:../../../dist/enbiso/ngrx-route",
-    "@enbiso/utils-url": "file:../../../dist/enbiso/utils-url",
+    "@enbiso/rxjs-operators": "0.1.x",
+    "@enbiso/ngrx-route": "0.1.x",
+    "@enbiso/utils-url": "0.1.x",
     "@ngrx/effects": "13.x",
     "@ngrx/router-store": "13.x",
     "@ngrx/store": "13.x",
