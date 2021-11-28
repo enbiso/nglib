@@ -1,5 +1,5 @@
 {
-  "name": "@enbiso/ngrx-operators",
+  "name": "@enbiso/rxjs-operators",
   "version": "0.1.0",
   "peerDependencies": {
     "@angular/common": "^13.0.2",

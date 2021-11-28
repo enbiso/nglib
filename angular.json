@@ -158,23 +158,23 @@
         }
       }
     },
-    "@enbiso/ngrx-operators": {
+    "@enbiso/rxjs-operators": {
       "projectType": "library",
-      "root": "projects/enbiso/ngrx-operators",
-      "sourceRoot": "projects/enbiso/ngrx-operators/src",
+      "root": "projects/enbiso/rxjs-operators",
+      "sourceRoot": "projects/enbiso/rxjs-operators/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/enbiso/ngrx-operators/ng-package.json"
+            "project": "projects/enbiso/rxjs-operators/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/enbiso/ngrx-operators/tsconfig.lib.prod.json"
+              "tsConfig": "projects/enbiso/rxjs-operators/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/enbiso/ngrx-operators/tsconfig.lib.json"
+              "tsConfig": "projects/enbiso/rxjs-operators/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -182,9 +182,9 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/enbiso/ngrx-operators/src/test.ts",
-            "tsConfig": "projects/enbiso/ngrx-operators/tsconfig.spec.json",
-            "karmaConfig": "projects/enbiso/ngrx-operators/karma.conf.js"
+            "main": "projects/enbiso/rxjs-operators/src/test.ts",
+            "tsConfig": "projects/enbiso/rxjs-operators/tsconfig.spec.json",
+            "karmaConfig": "projects/enbiso/rxjs-operators/karma.conf.js"
           }
         }
       }

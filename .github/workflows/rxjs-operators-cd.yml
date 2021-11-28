@@ -1,11 +1,11 @@
-name: Publish @enbiso/ngrx-operators
+name: Publish @enbiso/rxjs-operators
 
 on:
   push:
     branches:
       - main
     paths:
-      - "projects/enbiso/ngrx-operators/**"
+      - "projects/enbiso/rxjs-operators/**"
 
 jobs:
   build-web:
@@ -27,6 +27,6 @@ jobs:
 
       - name: Publish
         run: npm publish --access public
-        working-directory: dist/enbiso/ngrx-operators
+        working-directory: dist/enbiso/rxjs-operators
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
