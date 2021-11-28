@@ -23,7 +23,7 @@ jobs:
         run: npm i
 
       - name: Build
-        run: ./build.sh utils-url rxjs-operators ngrx-route auth
+        run: chmod +x ./build.sh && ./build.sh utils-url rxjs-operators ngrx-route auth
 
       - name: Publish
         run: npm publish --access public

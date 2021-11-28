@@ -23,7 +23,7 @@ jobs:
         run: npm i
 
       - name: Build
-        run: ./build.sh multi-input
+        run: chmod +x ./build.sh && ./build.sh multi-input
 
       - name: Publish
         run: npm publish --access public
