@@ -5,6 +5,7 @@
     "@angular/common": "13.x",
     "@angular/core": "13.x",
     "@ngrx/store": "13.x",
+    "@enbiso/auth": "file:../../../dist/enbiso/auth",
     "oidc-client": "1.x",
     "uuid": "8.x"
   },
