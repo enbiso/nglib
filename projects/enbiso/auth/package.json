@@ -1,20 +1,20 @@
 {
   "name": "@enbiso/auth",
-  "version": "13.0.0",
+  "version": "14.0.0",
   "peerDependencies": {
-    "@angular/cdk": "13.x",
-    "@angular/common": "13.x",
-    "@angular/core": "13.x",
-    "@angular/material": "13.x",
-    "@enbiso/rxjs-operators": "13.x",
-    "@enbiso/ngrx-route": "13.x",
-    "@enbiso/utils-url": "13.x",
-    "@ngrx/effects": "13.x",
-    "@ngrx/router-store": "13.x",
-    "@ngrx/store": "13.x",
+    "@angular/cdk": "14.x",
+    "@angular/common": "14.x",
+    "@angular/core": "14.x",
+    "@angular/material": "14.x",
+    "@enbiso/rxjs-operators": "14.x",
+    "@enbiso/ngrx-route": "14.x",
+    "@enbiso/utils-url": "14.x",
+    "@ngrx/effects": "14.x",
+    "@ngrx/router-store": "14.x",
+    "@ngrx/store": "14.x",
     "oidc-client": "1.x"
   },
   "dependencies": {
-    "tslib": "^2.3.0"
+    "tslib": "^2.4.0"
   }
 }
