@@ -1,9 +1,9 @@
 {
   "name": "@enbiso/rxjs-operators",
-  "version": "14.0.0",
+  "version": "16.0.0",
   "peerDependencies": {
-    "@angular/common": "14.x",
-    "@angular/core": "14.x"
+    "@angular/common": "16.x",
+    "@angular/core": "16.x"
   },
   "dependencies": {
     "tslib": "^2.4.0"

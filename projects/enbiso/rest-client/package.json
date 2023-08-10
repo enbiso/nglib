@@ -1,18 +1,18 @@
 {
   "name": "@enbiso/rest-client",
-  "version": "14.0.0",
+  "version": "16.0.0",
   "peerDependencies": {
-    "@angular/common": "14.x",
-    "@angular/core": "14.x",
-    "@ngrx/store": "14.x",
-    "@enbiso/auth": "14.x",
+    "@angular/common": "16.x",
+    "@angular/core": "16.x",
+    "@ngrx/store": "16.x",
+    "@enbiso/auth": "16.x",
     "oidc-client": "1.x",
-    "uuid": "8.x"
+    "uuid": "9.x"
   },
   "dependencies": {
     "tslib": "^2.4.0"
   },
   "devDependencies": {
-    "@types/uuid": "8.x"
+    "@types/uuid": "9.x"
   }
 }
